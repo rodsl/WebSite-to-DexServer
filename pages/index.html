@@ -1,252 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <title>DexCraftServer</title>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>DexCraft Server</title>
   </head>
-
   <body>
-    <script>
-      function showDiv(tipo) {
-        let opcao = String(tipo);
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("showabout").style.display = "none";
-        document.getElementById("server").style.display = "none";
-        document.getElementById("download").style.display = "none";
-        document.getElementById("status").style.display = "none";
-        document.getElementById(opcao).style.display = "block";
-      }
-    </script>
-
-    <header>
-      <div id="logo">
-        <a href="https://discord.gg/f2CWg7E">
-          <img src="../img/icon.png" alt="" id="logo"
-        /></a>
+      <header>
+          <div class="container header">
+              <div id="logo">
+                  <img src="/img/iconHeader.png" alt="" />
+                </div>
+                <nav>navbar</nav>
+            </header>
+        </div>
+    <main>
+      <div class="container">
+        <div id="banner">
+          <div id="title">
+            <h1>Bem vindo ao DexCraft Server</h1>
+          </div>
+          <div id="intro">
+            <p>
+              O DexCraft é um conjunto de servidores dedicados de Minecraft, bem
+              humilde pra galera bater um papo e matar a saudade desse jogo!
+            </p>
+          </div>
+        </div>
       </div>
-      <div id="menu">
-        <input
-          type="button"
-          name="about"
-          value="Quem somos"
-          Onclick="showDiv('showabout')"
-        />
-        <input
-          type="button"
-          name="about"
-          value="Sobre os Servidores"
-          Onclick="showDiv('server')"
-        />
-        <input
-          type="button"
-          name="about"
-          value="Download"
-          Onclick="showDiv('download')"
-        />
-        <input
-          type="button"
-          name="about"
-          value="Status Do Servidor"
-          Onclick="showDiv('status')"
-        />
-        <input
-          type="button"
-          name="about"
-          value="Fale conosco"
-          Onclick="showDiv('contact')"
-        />
-      </div>
-    </header>
-    <div id="showabout" style="display: none" class="about">
-      <h1>Bem Vindo Ao DexCraft</h1>
-      <br />
-      <p>
-        O DexCraft é um conjunto de servidores dedicados de Minecraft, bem
-        humilde pra galera bater um papo e matar a saudade desse jogo. O
-        servidor conta atualmente com 2 tipos: um com Mods e Facções e outro
-        baseado em Pixelmon!
-      </p>
-      <br />
-      <h3>
-        Fisicamente, contamos com os seguintes equipamentos:<br />
-        Servidor Primário - Dell OptiPlex 790
-      </h3>
-      <br />
-
-      <p>
-        <b>Fonte de Alimentação:</b> Dell Proprietária 500W<br />
-        <b>Processador:</b> Intel Core i7 - 3770 Quad-Core 3.40GHz<br />
-        <b>Memória RAM:</b> 4x 4GB Kingston DDR3 1666MHz 2x Dual Channel (Total
-        16GB)<br />
-        <b>Armazenamento:</b> HDD SATA III Western Digital Caviar Blue 500GB +
-        HDD SATA III Seagate Momentus 1TB + SSHD SATA III Seagate ThinHD 1TB
-        (Total 2,5TB)<br />
-        <b>Placa de Vídeo:</b> NVidia Quadro NVS 420 128bit 512MB
-      </p>
-      <br />
-      <h1>Requisitos minimos para jogar nos servidores:</h1>
-      <b
-        ><p2
-          >Processador de 2 Núcleos com 2GHz de Clock<br />
-          3GB RAM<br />
-          Sistema Operacional de 64 bits<br />
-          2,5GB de Espaço em Disco<br />
-          Internet Banda Larga de 50Mbps, ou Taxa de Upload acima de 15Mbps<br /> </p2
-      ></b><br>
-      <h1>DexCraft Launcher</h1>
-      <br />
-      <p>
-        O DexCraft Launcher é um programa que eu desenvolvi para facilitar as alterações que porventura possam ser feitas no servidor e acabem afetando o jogo salvo na sua máquina também. Segue algumas características:
-      </p>
-      <br>
-      <hr/>
-      <ul>
-        <li>Sincroniza arquivos de configuração, scripts, mods e bibliotecas que foram alteradas nos servidores;</li>
-        <li>Mantém seu Java atualizado e usando o melhor da performance do seu computador, evitando lags ao máximo;</li>
-        <li>
-          Permite que você faça ajustes nas opções gráficas e deixe tudo salvo;
-        </li>
-        <li>Não precisa baixar nada a não ser o instalador. Se executar como Administrador, tudo funciona perfeitamente;</li>
-        <li>
-          Te sugere soundpacks criados pelos membros da Armada do Córnio, bem como Shaders e Texturas previamente testadas;
-        </li>
-        <li>
-          Salva seus mundos Singleplayer para que você possa jogar em qualquer lugar em que baixar o Launcher;
-        </li>
-        <li>
-          Não corrompe e nem afeta outras instalações de Minecraft que você tenha, ou outros Launchers com outras versões.
-        </li>
-      </ul>
-    </div>
-
-    <div id="download" style="display: none" class="about">
-      <h1>Tutorial De Instalacao do DexCraft Launcher</h1>
-      <center><b>Instalando em 8 Passos:<br>
-      1 - Baixe o instalador do Launcher em ".exe".<br>
-      2 - Clique com o botão direito do mouse no arquivo, e clique em "Executar como Administrador".<br>
-      3 - Com a janela do Launcher aberta, crie um Username e uma senha numérica (PIN) de 4 a 12 caracteres.<br>
-      4 - Após isso, uma nova janela irá aparecer com uma opção para jogar. Mais arquivos serão carregados.<br>
-      5 - Aguarde todos os processos de instalação e atualização. No fim, uma nova janela irá abrir.<br>
-      6 - Clique em "Jogar", e aguarde o carregamento do jogo. Caso o botão não possa ser clicado, clique em "Logout" e depois em "Play".<br>
-      7 - Vá em "Multiplayer" e selecione o servidor,  clicando duas vezes no servidor ou no botão "Join server".<br>
-      8 - Na sua primeira vez no jogo, você precisará se registrar: Abra o chat do minecraft (usando o atalho "t") e digite "/register PIN" (sem as aspas), onde PIN é o PIN que criou no DexCraft Launcher.<br>
-      
-      Na próxima vez que entrar no Minecraft, usará comando para logar da seguinte forma:<br>
-      Abra o chat do minecraft (usando o atalho "t") e digite "/login PIN" (sem as aspas), onde PIN é o PIN que criou no DexCraft Launcher.</>
-      <br>
-      <h1>LINK DE DOWNLOAD DO DexCraft Launcher</h1><br>
-      ******LINK******
-
-    </div>
-
-    <div id="status" style="display: none" class="about">
-      
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <div id="contact" style="display: none" class="about">
-
-
-
-
-
-    </div>
-
-    
-    <div id="server" style="display: none" class="about">
-      <h1>Bem Vindo Ao DexCraft Factions</h1>
-      <br/>
-      <h4>
-        Será que você é bom o bastante?<br />
-        DexCraft Factions redefine o conceito de "survival". Ao primeiro olhar,
-        é apenas mais um Minecraft no Modo Sobrevivência, até que você encontra
-        um Mob possuído! Alta vida, alto dano, com superpoderes e até armado!
-        Até o melhor jogador terá que tomar cuidado e ter muita estratégia para
-        sobreviver um dia sequer! Isso tudo para acumular pontos para sua
-        Facção, conseguir território, acumular recursos e liberar o mapa!
-      </h4>
-      <br/>
-      <h3>
-        Servidor Minecraft 1.7.10 com CraftBukkit 1.7.9-R02, KCauldron 1.7.10 e
-        Forge 1614
-      </h3>
-      <br/>
-      <hr/>
-      <ul>
-        <li>Lute diariamente para sobreviver contra os mobs possuídos!</li>
-        <li>Fique vivo e acumule pontos de território para sua Facção!</li>
-        <li>
-          "Clame" território e aumente a área de sua Facção, expandindo seu mapa
-          e vencendo as outras Facções!
-        </li>
-        <li>Crafte armas, arcos, e armarduras únicas usando a Smeltery!</li>
-        <li>
-          Equipe Pets no seu inventário e use seus poderes para sobreviver!
-        </li>
-        <li>
-          Crie livros mágicos, reúna os ingredientes e construa magias e
-          habilidades!
-        </li>
-        <li>
-          Viaje às dimensões de Orespawn e colete recursos para craftar a rara
-          Miner's Dream!
-        </li>
-        <li>
-          Construa incríveis construções com belas estéticas usando Carpenter's
-          Blocks e Chisel!
-        </li>
-      </ul>
-      <hr/>
-      <br>
-      <h1>Bem Vindo Ao DexCraft Pixelmon</h1>
-      <br/>
-      <h4>
-        Será que você consegue ser um mestre Pokémon no mundo de Minecraft?<br>
-Pixelmon é o premiado Mod que transforma o mundo do Minecraft em um mundo de Pokémon!
-Escolha um Pokémon dentre os 18 iniciais, e explore o mapa capturando Pokémon das 7 gerações!
-      </h4>
-      <br/>
-      <h3>
-        Servidor Minecraft 1.12.2 com Mohist 1.12.2-52aee9f, Forge 2854 e Pixelmon 1.12.2-8.0
-      </h3>
-      <br/><hr/>
-      <ul>
-        <li>Embarque na primeira e melhor aventura de pokémon criada por um Mod!</li>
-        <li>Capture seus pokémon e faça sua party!</li>
-        <li>
-          Monte em seu pokémon e surfe ou voe!
-        </li>
-        <li>Colecione TMs e HMs e personalize os movimentos dos seus pokémon</li>
-        <li>
-          Explore novas cidades e vença os ginásios para conseguir as badges!
-        </li>
-        <li>
-          Crafte pokébolas poderosas e capture pokémon lendários!
-        </li>
-        <li>
-          Participe de eventos e seja o número 1 no Servidor!
-        </li>
-        <li>
-          Duele em uma batalha intensa de pokemons com seus amigos!
-        </li>
-      </ul>
-      <hr/>
-    </div>
-    <footer>
-      <h1>Site Desenvolvido</h1>
-      <br>
-      <h3 style="color: red">BY: TRANSCÓRNIO</h3>
-    </footer>
+    </main>
+    <!-- <footer>Footer</footer> -->
   </body>
 </html>
